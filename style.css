@@ -23,6 +23,10 @@ h1 {
 img {
   max-height: 250px;
   max-width: 250px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border: 2px solid #f3ece7;
+  background-color: #fff;
 }
 
 /* Optional decorative border for each tile */
@@ -39,6 +43,15 @@ img {
   margin-top: 8px;
   font-size: 14px;
   color: #444;
+}
+
+/* Subtle hover effect for .tile-hover images */
+.tile-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tile-hover:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
 
 /* 💡 Optional Enhancements:
